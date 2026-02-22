@@ -22,7 +22,7 @@ jobs:
 
       - name: Fetch recent activity and update README
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RECENT_ACTIVITY }}
           COMMITTER_EMAIL: 263106246+MoiraZenovis@users.noreply.github.com
           COMMITTER_NAME: Moira
         run: |
