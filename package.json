@@ -1,0 +1,26 @@
+{
+  "name": "moira-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 8080",
+    "lint": "eslint src --ext .ts,.tsx --max-warnings 0",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "format": "prettier --write src",
+    "typecheck": "tsc --noEmit",
+    "validate": "npm run typecheck && npm run lint",
+    "docker:dev": "docker compose up dev",
+    "docker:build": "docker build -t moira-portfolio:prod .",
+    "docker:preview": "docker run -p 8080:80 moira-portfolio:prod",
+    "docker:lint": "docker compose run --rm dev npm run lint",
+    "docker:typecheck": "docker compose run --rm dev npm run typecheck",
+    "docker:validate": "docker compose run --rm dev npm run validate",
+    "docker:test": "docker compose run --rm dev npm run test"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": ["eslint --max-warnings 0", "prettier --write"],
+    "src/**/*.{css,json,md}": ["prettier --write"]
+  }
+}
