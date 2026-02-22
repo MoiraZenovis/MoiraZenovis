@@ -17,5 +17,8 @@ module.exports = {
     'prettier'
   ],
   plugins: ['react', 'react-hooks', 'jsx-a11y', '@typescript-eslint'],
-  rules: {}
+  rules: {
+    'react/react-in-jsx-scope': 'off',
+    'react/no-unescaped-entities': 'off'
+  }
 }
