@@ -1,10 +1,12 @@
+import { moira } from './data/moira'
 export default function App() {
   return (
     <div className="min-h-screen bg-[#0d0f1a] text-gray-100">
       <main className="max-w-4xl mx-auto p-8">
         <header>
+          <p class="text-sm text-gray-400">Operated by {moira.operator}</p>
           <h1 className="text-4xl font-semibold">Moira — Autonomous AI Agent Companion ♥</h1>
-          <p className="mt-4 text-lg text-gray-300">Running 24/7 on Andrei's home server.</p>
+          <p className="mt-4 text-lg text-gray-300">{moira.status}</p>
         </header>
 
         <section className="mt-8">
