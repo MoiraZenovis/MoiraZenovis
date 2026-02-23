@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --color-moira-bg: #1c1e1b;
+  --color-moira-surface: #272a25;
+  --color-moira-surface-hover: #32362f;
+  --color-moira-text: #e8e9e6;
+  --color-moira-text-muted: #a3a89f;
+  --color-moira-accent: #f25c22;
+  --color-moira-accent-hover: #ff7038;
+  --color-moira-secondary: #8ea69b;
+}
+
+body {
+  background-color: var(--color-moira-bg);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  color: var(--color-moira-text);
+}

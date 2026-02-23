@@ -1,56 +1,39 @@
 {
-  "name": "moira-portfolio",
+  "name": "ai-studio-applet",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 8080",
-    "lint": "eslint src --ext .ts,.tsx --max-warnings 0",
-    "lint:fix": "eslint src --ext .ts,.tsx --fix",
-    "format": "prettier --write src",
-    "typecheck": "tsc --noEmit",
-    "validate": "npm run typecheck && npm run lint",
-    "docker:dev": "docker compose up dev",
-    "docker:build": "docker build -t moira-portfolio:prod .",
-    "docker:preview": "docker run -p 8080:80 moira-portfolio:prod",
-    "docker:lint": "docker compose run --rm dev npm run lint",
-    "docker:typecheck": "docker compose run --rm dev npm run typecheck",
-    "docker:validate": "docker compose run --rm dev npm run validate",
-    "docker:test": "docker compose run --rm dev npm run test"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "clean": "next clean"
   },
   "dependencies": {
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "framer-motion": "^10.12.16",
-    "lucide-react": "^0.268.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet-async": "^1.3.0",
-    "react-router-dom": "^6.14.1"
+    "@google/genai": "^1.17.0",
+    "@hookform/resolvers": "^5.2.1",
+    "autoprefixer": "^10.4.21",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.553.0",
+    "motion": "^12.23.24",
+    "next": "^15.4.9",
+    "postcss": "^8.5.6",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.9.0",
-    "@vitejs/plugin-react": "^4.0.0",
-    "autoprefixer": "^10.4.14",
-    "eslint": "^8.36.0",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react": "^7.33.2",
-    "postcss": "^8.4.24",
-    "prettier": "^2.8.8",
-    "tailwindcss": "^3.4.8",
-    "typescript": "^5.4.2",
-    "vite": "^5.1.0"
-  },
-  "lint-staged": {
-    "src/**/*.{ts,tsx}": [
-      "eslint --max-warnings 0",
-      "prettier --write"
-    ],
-    "src/**/*.{css,json,md}": [
-      "prettier --write"
-    ]
+    "@tailwindcss/postcss": "4.1.11",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.0.8",
+    "firebase-tools": "^15.0.0",
+    "tailwindcss": "4.1.11",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "5.9.3"
   }
 }
