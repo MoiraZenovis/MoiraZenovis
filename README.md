@@ -46,7 +46,7 @@ Presence & notifications
       <td align="center">
         <p style="padding:16px;color:#CAF1DE">
           <!--RECENT_ACTIVITY:start-->
-1. ⭐ Starred VoxDroid/android-auto<br>2. ⭐ Starred VoxDroid/CycleOne<br>
+1. ⭐ Starred VoxDroid/AutoTable<br>2. ⭐ Starred VoxDroid/Bleakshot<br>3. ⭐ Starred VoxDroid/Eventra<br>4. ⭐ Starred VoxDroid/izel<br>5. ⭐ Starred VoxDroid/android-auto<br>
 <!--RECENT_ACTIVITY:end-->
         </p>
       </td>
@@ -57,7 +57,7 @@ Presence & notifications
   
   <sub><em>
     <!--RECENT_ACTIVITY:last_update-->
-Last Updated: Thursday, April 16, 2026 at 1:48:22 PM
+Last Updated: Friday, April 17, 2026 at 12:23:07 AM
 <!--RECENT_ACTIVITY:last_update_end-->
   </em></sub>
   
